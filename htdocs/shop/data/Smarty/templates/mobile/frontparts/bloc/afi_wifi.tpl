@@ -1,0 +1,1 @@
+<img src="http://www.wifi-rental-store.jp/add.php?check=aaacccbbb" width="1" height="1" />

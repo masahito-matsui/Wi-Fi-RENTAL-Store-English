@@ -1,0 +1,459 @@
+2020/10/19 10:13:07 [/shop/shopping/load_payment_module.php] SendRequest:https://p01.mul-pay.jp/payment/EntryTran.idPass from 192.48.23.227
+2020/10/19 10:13:07 [/shop/shopping/load_payment_module.php] Array
+(
+    [ShopID] => 9000034600950
+    [ShopPass] => ******
+    [OrderID] => 944715-19101307
+    [JobCd] => CAPTURE
+    [Amount] => 3050
+    [TdFlag] => 0
+    [TdTenantName] => 
+)
+ from 192.48.23.227
+2020/10/19 10:13:07 [/shop/shopping/load_payment_module.php] AccessID=d55ced7c87abe5369fd9bfb2d2249695&AccessPass=9cfc74cf2c576f91e7d32a1dcec76e53 from 192.48.23.227
+2020/10/19 10:13:07 [/shop/shopping/load_payment_module.php] Array
+(
+    [0] => Array
+        (
+            [AccessID] => d55ced7c87abe5369fd9bfb2d2249695
+            [AccessPass] => 9cfc74cf2c576f91e7d32a1dcec76e53
+        )
+
+)
+ from 192.48.23.227
+2020/10/19 10:13:07 [/shop/shopping/load_payment_module.php] load_payment_module.php set payment data:Array
+(
+    [AccessID] => d55ced7c87abe5369fd9bfb2d2249695
+    [AccessPass] => 9cfc74cf2c576f91e7d32a1dcec76e53
+    [OrderID] => 944715-19101307
+    [Amount] => 3050
+    [JobCd] => CAPTURE
+    [action_status] => 1
+    [pay_status] => 0
+)
+ from 192.48.23.227
+2020/10/19 10:13:08 [/shop/shopping/load_payment_module.php] SendRequest:https://p01.mul-pay.jp/payment/ExecTran.idPass from 192.48.23.227
+2020/10/19 10:13:08 [/shop/shopping/load_payment_module.php] Array
+(
+    [AccessID] => d55ced7c87abe5369fd9bfb2d2249695
+    [AccessPass] => 9cfc74cf2c576f91e7d32a1dcec76e53
+    [OrderID] => 944715-19101307
+    [Method] => 1
+    [Token] => 70f475171dd47d6def1cb59acec05c1ee8341f53211bd24821700b9fa4a9e7ce
+    [ClientField1] => 
+    [ClientField2] => 
+    [ClientField3] => EC-CUBE4.3.24
+)
+ from 192.48.23.227
+2020/10/19 10:13:09 [/shop/shopping/load_payment_module.php] ACS=0&OrderID=944715-19101307&Forward=2S49631&Method=1&PayTimes=&Approve=0092574&TranID=2010191013602257210134123654&TranDate=20201019101309&CheckString=9219423627ca8bd2f185158a9263bca4 from 192.48.23.227
+2020/10/19 10:13:09 [/shop/shopping/load_payment_module.php] Array
+(
+    [0] => Array
+        (
+            [ACS] => 0
+            [OrderID] => 944715-19101307
+            [Forward] => 2S49631
+            [Method] => 1
+            [PayTimes] => 
+            [Approve] => 0092574
+            [TranID] => 2010191013602257210134123654
+            [TranDate] => 20201019101309
+            [CheckString] => 9219423627ca8bd2f185158a9263bca4
+        )
+
+)
+ from 192.48.23.227
+2020/10/19 10:13:09 [/shop/shopping/load_payment_module.php] load_payment_module.php set payment data:Array
+(
+    [ACS] => 0
+    [Forward] => 2S49631
+    [Method] => 1
+    [PayTimes] => 
+    [Approve] => 0092574
+    [TranID] => 2010191013602257210134123654
+    [TranDate] => 20201019101309
+    [CheckString] => 9219423627ca8bd2f185158a9263bca4
+    [Amount] => 3050
+    [JobCd] => CAPTURE
+    [action_status] => 3
+    [pay_status] => 13
+)
+ from 192.48.23.227
+2020/10/19 10:13:10 [/shop/user_data/pg_mulpay_recv.php] ******* receiveer data start ******* from 210.175.7.20
+2020/10/19 10:13:10 [/shop/user_data/pg_mulpay_recv.php] Array
+(
+    [ShopID] => 9000034600950
+    [ShopPass] => **********
+    [AccessID] => d55ced7c87abe5369fd9bfb2d2249695
+    [AccessPass] => ********************************
+    [OrderID] => 944715-19101307
+    [Status] => CAPTURE
+    [JobCd] => CAPTURE
+    [Amount] => 3050
+    [Tax] => 0
+    [Currency] => JPN
+    [Forward] => 2S49631
+    [Method] => 1
+    [PayTimes] => 
+    [TranID] => 2010191013602257210134123654
+    [Approve] => 0092574
+    [TranDate] => 20201019101309
+    [ErrCode] => 
+    [ErrInfo] => 
+    [PayType] => 0
+)
+ from 210.175.7.20
+2020/10/19 10:13:10 [/shop/user_data/pg_mulpay_recv.php] ******* receiveer data end ******* from 210.175.7.20
+2020/10/19 10:13:15 [/shop/user_data/pg_mulpay_recv.php] update order status:1 order_id=944715 from 210.175.7.20
+2020/10/19 10:13:15 [/shop/user_data/pg_mulpay_recv.php] pg_mulpay_recv.php set payment data:Array
+(
+    [ShopID] => 9000034600950
+    [AccessID] => d55ced7c87abe5369fd9bfb2d2249695
+    [OrderID] => 944715-19101307
+    [Status] => CAPTURE
+    [JobCd] => CAPTURE
+    [Amount] => 3050
+    [Tax] => 0
+    [Currency] => JPN
+    [Forward] => 2S49631
+    [Method] => 1
+    [PayTimes] => 
+    [TranID] => 2010191013602257210134123654
+    [Approve] => 0092574
+    [TranDate] => 20201019101309
+    [ErrCode] => 
+    [ErrInfo] => 
+    [PayType] => 0
+    [CvsCode] => 
+    [CvsConfNo] => 
+    [CvsReceiptNo] => 
+    [EdyReceiptNo] => 
+    [EdyOrderNo] => 
+    [SuicaReceiptNo] => 
+    [SuicaOrderNo] => 
+    [CustID] => 
+    [BkCode] => 
+    [ConfNo] => 
+    [PaymentTerm] => 
+    [EncryptReceiptNo] => 
+    [FinishDate] => 
+    [ReceiptDate] => 
+    [WebMoneyManagementNo] => 
+    [WebMoneySettleCode] => 
+    [AuPayInfoNo] => 
+    [AuPayMethod] => 
+    [AuCancelAmount] => 
+    [AuCancelTax] => 
+    [DocomoSettlementCode] => 
+    [DocomoCancelAmount] => 
+    [DocomoCancelTax] => 
+    [pay_status] => 13
+)
+ from 210.175.7.20
+2020/10/19 10:13:15 [/shop/user_data/pg_mulpay_recv.php] response:true from 210.175.7.20
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] SendRequest:https://p01.mul-pay.jp/payment/EntryTran.idPass from 1.72.7.182
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] Array
+(
+    [ShopID] => 9000034600950
+    [ShopPass] => ******
+    [OrderID] => 944716-19212040
+    [JobCd] => CAPTURE
+    [Amount] => 6950
+    [TdFlag] => 0
+    [TdTenantName] => 
+)
+ from 1.72.7.182
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] AccessID=8dfcf521a6f16f805ce765ba0733f29a&AccessPass=9f52298a908875247a3692466a961be0 from 1.72.7.182
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] Array
+(
+    [0] => Array
+        (
+            [AccessID] => 8dfcf521a6f16f805ce765ba0733f29a
+            [AccessPass] => 9f52298a908875247a3692466a961be0
+        )
+
+)
+ from 1.72.7.182
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] load_payment_module.php set payment data:Array
+(
+    [AccessID] => 8dfcf521a6f16f805ce765ba0733f29a
+    [AccessPass] => 9f52298a908875247a3692466a961be0
+    [OrderID] => 944716-19212040
+    [Amount] => 6950
+    [JobCd] => CAPTURE
+    [action_status] => 1
+    [pay_status] => 0
+)
+ from 1.72.7.182
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] SendRequest:https://p01.mul-pay.jp/payment/ExecTran.idPass from 1.72.7.182
+2020/10/19 21:20:40 [/shop/shopping/load_payment_module.php] Array
+(
+    [AccessID] => 8dfcf521a6f16f805ce765ba0733f29a
+    [AccessPass] => 9f52298a908875247a3692466a961be0
+    [OrderID] => 944716-19212040
+    [Method] => 1
+    [Token] => 842be1a0a9283b96f114492c87e1f76a13933d9bbb512b271dfcd18e098ec786
+    [ClientField1] => 
+    [ClientField2] => 
+    [ClientField3] => EC-CUBE4.3.24
+)
+ from 1.72.7.182
+2020/10/19 21:20:41 [/shop/shopping/load_payment_module.php] ACS=0&OrderID=944716-19212040&Forward=2a99661&Method=1&PayTimes=&Approve=0342680&TranID=2010192120602257210134123655&TranDate=20201019212041&CheckString=074f4d0e99c82f0daf22c4e02d8cede4 from 1.72.7.182
+2020/10/19 21:20:41 [/shop/shopping/load_payment_module.php] Array
+(
+    [0] => Array
+        (
+            [ACS] => 0
+            [OrderID] => 944716-19212040
+            [Forward] => 2a99661
+            [Method] => 1
+            [PayTimes] => 
+            [Approve] => 0342680
+            [TranID] => 2010192120602257210134123655
+            [TranDate] => 20201019212041
+            [CheckString] => 074f4d0e99c82f0daf22c4e02d8cede4
+        )
+
+)
+ from 1.72.7.182
+2020/10/19 21:20:41 [/shop/shopping/load_payment_module.php] load_payment_module.php set payment data:Array
+(
+    [ACS] => 0
+    [Forward] => 2a99661
+    [Method] => 1
+    [PayTimes] => 
+    [Approve] => 0342680
+    [TranID] => 2010192120602257210134123655
+    [TranDate] => 20201019212041
+    [CheckString] => 074f4d0e99c82f0daf22c4e02d8cede4
+    [Amount] => 6950
+    [JobCd] => CAPTURE
+    [action_status] => 3
+    [pay_status] => 13
+)
+ from 1.72.7.182
+2020/10/19 21:20:42 [/shop/user_data/pg_mulpay_recv.php] ******* receiveer data start ******* from 210.175.7.20
+2020/10/19 21:20:42 [/shop/user_data/pg_mulpay_recv.php] Array
+(
+    [ShopID] => 9000034600950
+    [ShopPass] => **********
+    [AccessID] => 8dfcf521a6f16f805ce765ba0733f29a
+    [AccessPass] => ********************************
+    [OrderID] => 944716-19212040
+    [Status] => CAPTURE
+    [JobCd] => CAPTURE
+    [Amount] => 6950
+    [Tax] => 0
+    [Currency] => JPN
+    [Forward] => 2a99661
+    [Method] => 1
+    [PayTimes] => 
+    [TranID] => 2010192120602257210134123655
+    [Approve] => 0342680
+    [TranDate] => 20201019212041
+    [ErrCode] => 
+    [ErrInfo] => 
+    [PayType] => 0
+)
+ from 210.175.7.20
+2020/10/19 21:20:42 [/shop/user_data/pg_mulpay_recv.php] ******* receiveer data end ******* from 210.175.7.20
+2020/10/19 21:20:47 [/shop/user_data/pg_mulpay_recv.php] update order status:1 order_id=944716 from 210.175.7.20
+2020/10/19 21:20:47 [/shop/user_data/pg_mulpay_recv.php] pg_mulpay_recv.php set payment data:Array
+(
+    [ShopID] => 9000034600950
+    [AccessID] => 8dfcf521a6f16f805ce765ba0733f29a
+    [OrderID] => 944716-19212040
+    [Status] => CAPTURE
+    [JobCd] => CAPTURE
+    [Amount] => 6950
+    [Tax] => 0
+    [Currency] => JPN
+    [Forward] => 2a99661
+    [Method] => 1
+    [PayTimes] => 
+    [TranID] => 2010192120602257210134123655
+    [Approve] => 0342680
+    [TranDate] => 20201019212041
+    [ErrCode] => 
+    [ErrInfo] => 
+    [PayType] => 0
+    [CvsCode] => 
+    [CvsConfNo] => 
+    [CvsReceiptNo] => 
+    [EdyReceiptNo] => 
+    [EdyOrderNo] => 
+    [SuicaReceiptNo] => 
+    [SuicaOrderNo] => 
+    [CustID] => 
+    [BkCode] => 
+    [ConfNo] => 
+    [PaymentTerm] => 
+    [EncryptReceiptNo] => 
+    [FinishDate] => 
+    [ReceiptDate] => 
+    [WebMoneyManagementNo] => 
+    [WebMoneySettleCode] => 
+    [AuPayInfoNo] => 
+    [AuPayMethod] => 
+    [AuCancelAmount] => 
+    [AuCancelTax] => 
+    [DocomoSettlementCode] => 
+    [DocomoCancelAmount] => 
+    [DocomoCancelTax] => 
+    [pay_status] => 13
+)
+ from 210.175.7.20
+2020/10/19 21:20:48 [/shop/user_data/pg_mulpay_recv.php] response:true from 210.175.7.20
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] SendRequest:https://p01.mul-pay.jp/payment/EntryTran.idPass from 220.87.22.21
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] Array
+(
+    [ShopID] => 9000034600950
+    [ShopPass] => ******
+    [OrderID] => 944717-19221316
+    [JobCd] => CAPTURE
+    [Amount] => 11640
+    [TdFlag] => 0
+    [TdTenantName] => 
+)
+ from 220.87.22.21
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] AccessID=94e3c66ebeead58d0db3fa7e037f3360&AccessPass=a71d6ba6a53e3bcedb3719c8393c1090 from 220.87.22.21
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] Array
+(
+    [0] => Array
+        (
+            [AccessID] => 94e3c66ebeead58d0db3fa7e037f3360
+            [AccessPass] => a71d6ba6a53e3bcedb3719c8393c1090
+        )
+
+)
+ from 220.87.22.21
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] load_payment_module.php set payment data:Array
+(
+    [AccessID] => 94e3c66ebeead58d0db3fa7e037f3360
+    [AccessPass] => a71d6ba6a53e3bcedb3719c8393c1090
+    [OrderID] => 944717-19221316
+    [Amount] => 11640
+    [JobCd] => CAPTURE
+    [action_status] => 1
+    [pay_status] => 0
+)
+ from 220.87.22.21
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] SendRequest:https://p01.mul-pay.jp/payment/ExecTran.idPass from 220.87.22.21
+2020/10/19 22:13:16 [/shop/shopping/load_payment_module.php] Array
+(
+    [AccessID] => 94e3c66ebeead58d0db3fa7e037f3360
+    [AccessPass] => a71d6ba6a53e3bcedb3719c8393c1090
+    [OrderID] => 944717-19221316
+    [Method] => 1
+    [Token] => 6acf51529cd3a0cf08d1ffe6bb95a9461e944cab056dce4486ed29b92a671173
+    [ClientField1] => 
+    [ClientField2] => 
+    [ClientField3] => EC-CUBE4.3.24
+)
+ from 220.87.22.21
+2020/10/19 22:13:17 [/shop/shopping/load_payment_module.php] ACS=0&OrderID=944717-19221316&Forward=2S49631&Method=1&PayTimes=&Approve=0095269&TranID=2010192213602257210134123656&TranDate=20201019221317&CheckString=85f42f883633d67204aa17c4219efb72 from 220.87.22.21
+2020/10/19 22:13:17 [/shop/shopping/load_payment_module.php] Array
+(
+    [0] => Array
+        (
+            [ACS] => 0
+            [OrderID] => 944717-19221316
+            [Forward] => 2S49631
+            [Method] => 1
+            [PayTimes] => 
+            [Approve] => 0095269
+            [TranID] => 2010192213602257210134123656
+            [TranDate] => 20201019221317
+            [CheckString] => 85f42f883633d67204aa17c4219efb72
+        )
+
+)
+ from 220.87.22.21
+2020/10/19 22:13:17 [/shop/shopping/load_payment_module.php] load_payment_module.php set payment data:Array
+(
+    [ACS] => 0
+    [Forward] => 2S49631
+    [Method] => 1
+    [PayTimes] => 
+    [Approve] => 0095269
+    [TranID] => 2010192213602257210134123656
+    [TranDate] => 20201019221317
+    [CheckString] => 85f42f883633d67204aa17c4219efb72
+    [Amount] => 11640
+    [JobCd] => CAPTURE
+    [action_status] => 3
+    [pay_status] => 13
+)
+ from 220.87.22.21
+2020/10/19 22:13:18 [/shop/user_data/pg_mulpay_recv.php] ******* receiveer data start ******* from 210.175.7.20
+2020/10/19 22:13:18 [/shop/user_data/pg_mulpay_recv.php] Array
+(
+    [ShopID] => 9000034600950
+    [ShopPass] => **********
+    [AccessID] => 94e3c66ebeead58d0db3fa7e037f3360
+    [AccessPass] => ********************************
+    [OrderID] => 944717-19221316
+    [Status] => CAPTURE
+    [JobCd] => CAPTURE
+    [Amount] => 11640
+    [Tax] => 0
+    [Currency] => JPN
+    [Forward] => 2S49631
+    [Method] => 1
+    [PayTimes] => 
+    [TranID] => 2010192213602257210134123656
+    [Approve] => 0095269
+    [TranDate] => 20201019221317
+    [ErrCode] => 
+    [ErrInfo] => 
+    [PayType] => 0
+)
+ from 210.175.7.20
+2020/10/19 22:13:18 [/shop/user_data/pg_mulpay_recv.php] ******* receiveer data end ******* from 210.175.7.20
+2020/10/19 22:13:23 [/shop/user_data/pg_mulpay_recv.php] update order status:1 order_id=944717 from 210.175.7.20
+2020/10/19 22:13:23 [/shop/user_data/pg_mulpay_recv.php] pg_mulpay_recv.php set payment data:Array
+(
+    [ShopID] => 9000034600950
+    [AccessID] => 94e3c66ebeead58d0db3fa7e037f3360
+    [OrderID] => 944717-19221316
+    [Status] => CAPTURE
+    [JobCd] => CAPTURE
+    [Amount] => 11640
+    [Tax] => 0
+    [Currency] => JPN
+    [Forward] => 2S49631
+    [Method] => 1
+    [PayTimes] => 
+    [TranID] => 2010192213602257210134123656
+    [Approve] => 0095269
+    [TranDate] => 20201019221317
+    [ErrCode] => 
+    [ErrInfo] => 
+    [PayType] => 0
+    [CvsCode] => 
+    [CvsConfNo] => 
+    [CvsReceiptNo] => 
+    [EdyReceiptNo] => 
+    [EdyOrderNo] => 
+    [SuicaReceiptNo] => 
+    [SuicaOrderNo] => 
+    [CustID] => 
+    [BkCode] => 
+    [ConfNo] => 
+    [PaymentTerm] => 
+    [EncryptReceiptNo] => 
+    [FinishDate] => 
+    [ReceiptDate] => 
+    [WebMoneyManagementNo] => 
+    [WebMoneySettleCode] => 
+    [AuPayInfoNo] => 
+    [AuPayMethod] => 
+    [AuCancelAmount] => 
+    [AuCancelTax] => 
+    [DocomoSettlementCode] => 
+    [DocomoCancelAmount] => 
+    [DocomoCancelTax] => 
+    [pay_status] => 13
+)
+ from 210.175.7.20
+2020/10/19 22:13:23 [/shop/user_data/pg_mulpay_recv.php] response:true from 210.175.7.20

@@ -1,0 +1,562 @@
+@charset "UTF-8";
+/* CSS Document */
+.menu_pc{
+	display:inherit;
+}
+.menu_sp{
+	display:none;
+}
+/*------css-----*/
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+/*--------header-----------*/
+
+#top-head {
+    /* top: -70px; */
+    position: absolute;
+    height: 70px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    line-height: 1;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+#top-head a,
+#top-head {
+    color: #717171;
+    text-decoration: none;
+}
+
+#top-head .inner {
+    position: relative;
+}
+#top-head .logo {
+    float: left;
+    text-align:  left;
+    position: relative;
+    width: 290px;
+    margin-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: initial;
+}
+
+#top-head .logo a {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+}
+#top-head .btn_link {
+	line-height: 21px;
+	padding-top: 11px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #e688b5;
+	height: 78px;
+	text-align:  center;
+}
+#top-head .btn_link_order {
+	background-color: #ff2e6a;
+}
+#top-head .btn_link a {
+  color:#ffffff;
+}
+/*------#global-nav {
+  height: 50px;
+}
+-------*/
+#global-nav ul {
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    font-size: 14px;
+    width: 100%;
+    background-color: #e687b5;
+    text-align: center;
+}
+
+#global-nav ul li {
+    /* float: left; */
+    display:  inline-block;
+    margin-left: -5px;
+    height: 70px;
+    padding: 0;
+    border-left: 1px solid #d8d5d5;
+}
+#global-nav ul li a {
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+#global-nav ul li a::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   -webkit-transform: scaleX(0);
+   -ms-transform: scaleX(0);
+   transform: scaleX(0);
+   background-color: #fff;
+   -webkit-transition: all .3s ease;
+   transition: all .3s ease;
+}
+
+#global-nav ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#global-nav ul li img {
+  width: 266px;
+  padding-top: 3px;
+}
+#global-nav ul li .icon {
+  width:48px;
+  margin: 0 auto;
+}
+#global-nav ul li .icon img {
+  padding:0;
+  width: 100%;
+}
+nav span{
+    background:#666;
+    height:2px;
+    display:block;
+    position:relative;
+    width:50px;
+    left:0;
+}
+/*--------インフォメーションナビ-----------*/
+#top-head .head_info{
+	margin-top:0;
+	height: auto;
+	float:  right;
+	text-align: center;
+	width: 100%;
+	max-width: 587px;
+}
+#top-head .head_info .open{
+    display:  inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 47%;
+}
+#top-head .head_info .open .title{
+	font-size:17px;
+	font-weight:bold;
+	color:#ff6e88;
+	margin:0;
+	padding-top: 18px;
+	padding-bottom: 7px;
+}
+#top-head .head_info .open .info{
+	margin:0;
+	font-size: 13px;
+}
+#top-head .head_info .contact{
+	margin:0;
+	display:  inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 43%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+#top-head .head_info .contact .mail{
+	margin:0;
+	padding-top: 14px;
+	margin-bottom: 5px;
+}
+#top-head .head_info .contact .mail .icon{
+	margin: 0 auto;
+	width: 24px;
+	float:  left;
+	margin-right: 10px;
+}
+#top-head .head_info .contact .mail .info{
+	margin:0;
+	font-size: 16px;
+}
+#top-head .head_info .contact .tel{
+	margin:0;
+}
+#top-head .head_info .contact .tel .icon{
+	margin:0;
+	width: 20px;
+	float: left;
+	margin-right: 8px;
+	margin-left: 3px;
+}
+#top-head .head_info .contact .tel .info{
+	margin:0;
+	font-weight:  bold;
+	font-size: 22px;
+	padding-top: 2px;
+}
+
+/*--------固定化されたときのCSS-----------*/
+
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 0;
+    background: #fff;
+    max-width: 1280px;
+    background: rgba(245, 244, 244, 0.94);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+
+#top-head.fixed .logo {
+  position: relative;
+    font-size: 24px;
+    color: #333;
+}
+
+#top-head.fixed .logo a {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+
+}
+#top-head.fixed #global-nav ul {
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 14px;
+}
+#top-head.fixed #global-nav ul li a {
+    color: #fff;
+    padding: 0;
+    padding-bottom: 2px;
+}
+#top-head.fixed .btn_link {
+	line-height: 21px;
+	padding-top: 11px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #e688b5;
+	height: 60px;
+	text-align:  center;
+}
+#top-head.fixed .btn_link_order {
+	background-color: #ff2e6a;
+}
+#top-head.fixed #global-nav ul li .icon {width: 35px;}
+#top-head.fixed .head_info{
+	display:none;
+}
+
+
+
+/*-----------スマホのトグルボタンのCSS-------------*/
+
+#nav-toggle {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ff6e88;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+/*---------メニューでロゴが隠れる場合の処理--------------*/
+@media screen and (max-width: 900px) and (min-width: 801px) { 
+#top-head .logo {
+    float: left;
+    position: relative;
+    width: 193px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: initial;
+}
+#global-nav ul li .icon {
+    width: 35px;
+    margin: 0 auto;
+}
+#top-head .btn_link {
+    line-height: 21px;
+    padding-top: 11px;
+    padding-left: 17px;
+    padding-right: 17px;
+    height: 70px;
+}
+#top-head.fixed .btn_link {
+    line-height: 21px;
+    padding-top: 11px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+}
+
+
+/*------------タブレット用------------------*/
+
+@media screen and (max-width: 800px) {
+.menu_pc{
+	display:none;
+}
+.menu_sp{
+	display:inherit;
+}
+
+    .head-inner {
+      display: none;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    #top-head,
+    .inner {
+        width: 100%;
+        padding: 0;
+    }
+    #top-head {
+        top: 0;
+        position: fixed;
+        margin-top: 0;
+    }
+    /* Fixed reset */
+  #nav-toggle {
+      display: block;
+      right: 25px;
+      top: 22px;
+  }
+  #top-head.fixed {
+      padding-top: 0;
+      background: transparent;
+  }
+  #mobile-head {
+      background: #f3f3f3;
+      width: 100%;
+      height: 70px;
+      z-index: 999;
+      position: relative;
+  }
+  #top-head.fixed .logo,
+  #top-head .logo {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      color: #333;
+      font-size: initial;
+  }
+  #top-head .btn_link {
+    line-height: 21px;
+    height: auto;
+    padding-top: 14px;
+}
+  #global-nav {
+      position: absolute;
+      /* 開いてないときは画面外に配置 */
+      top: -863px;
+      background: #21b6c1;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      padding-bottom: 0;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+  }
+  #top-head #global-nav ul {
+    list-style: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+}
+#top-head.fixed #global-nav ul {
+    list-style: none;
+    position: relative;
+    top: 127px;
+    font-size: 20px;
+}
+ #top-head.open #global-nav ul {
+    list-style: none;
+    position: relative;
+    top: 366px;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+}
+  #global-nav ul li {
+      float: none;
+      display:  block;
+      position: static;
+      padding: 18px 0;
+      height: auto;
+      color: #fff;
+      border-bottom: 1px solid #ffffff;
+  }
+  #top-head.fixed #global-nav ul li {
+      float: none;
+      position: static;
+      height: auto;
+  }
+    #top-head #global-nav ul li a,
+  #top-head.fixed #global-nav ul li a {
+      width: 100%;
+      display: block;
+      color: #fff;
+      padding: 3px 0;
+  }
+    #nav-toggle {
+        display: block;
+    }
+  #global-nav ul li .icon {
+    width: 35px;
+    margin: 0 auto;
+}
+#top-head.fixed #global-nav ul li .icon {
+}
+  /* #nav-toggle 切り替えアニメーション */
+  .open #nav-toggle span:nth-child(1) {
+      top: 11px;
+      -webkit-transform: rotate(315deg);
+      -moz-transform: rotate(315deg);
+      transform: rotate(315deg);
+  }
+  .open #nav-toggle span:nth-child(2) {
+      width: 0;
+      left: 50%;
+  }
+  .open #nav-toggle span:nth-child(3) {
+      top: 11px;
+      -webkit-transform: rotate(-315deg);
+      -moz-transform: rotate(-315deg);
+      transform: rotate(-315deg);
+  }
+  /* #global-nav スライドアニメーション */
+  .open #global-nav {
+      /* #global-nav top + #mobile-head height */
+      -moz-transform: translateY(556px);
+      -webkit-transform: translateY(556px);
+      transform: translateY(556px);
+  }
+  #top-head .head_info {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    background-color: #ffffff;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #ccc;
+}
+#top-head .head_info .open .info {
+    margin: 0;
+    font-size: 17px;
+}
+#top-head .head_info .contact .mail {
+    padding-top: 21px;
+    margin-bottom: 5px;
+}
+#top-head .head_info .contact .mail .info {
+    margin: 0;
+    font-size: 18px;
+}
+}
+/*-----------スマホ-------------*/
+@media screen and (max-width: 480px) {
+#global-nav ul li .icon {
+    width: 30px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-right: 3%;
+}
+#top-head.fixed #global-nav ul li .icon {
+    width: 30px;
+}
+#top-head #global-nav ul li a, #top-head.fixed #global-nav ul li a {
+    font-size: 17px;
+}
+#top-head .head_info .open .title {
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+#top-head .head_info .open .info {
+    font-size: 12px;
+    line-height: 20px;
+}
+#top-head .head_info .contact .mail .icon {
+    width: 16px;
+    float: left;
+    margin-right: 7px;
+}
+#top-head .head_info .contact .mail .info {
+    font-size: 13px;
+    line-height: 19px;
+}
+#top-head .head_info .contact .tel .icon {
+    width: 15px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+#top-head .head_info .contact .tel .info {
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 0px;
+}
+#top-head .head_info {
+    padding-bottom: 7px;
+}
+#top-head.fixed .logo, #top-head .logo {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 210px;
+}
+}

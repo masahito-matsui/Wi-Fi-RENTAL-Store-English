@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----------------アコーディオン開閉-------------------*/
+.accordionbox{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	margin-top: 0px;
+}
+.accordionbox ul.accordionlist {
+    margin: 0 auto;
+    padding: 0;
+}
+.accordionlist li.thumb{
+    display:block;
+    background: #fff;
+    border-top: 1px solid #DFDFDF;
+    cursor: pointer;
+    overflow:  inherit;
+}
+.accordionlist li.thumb img:hover{
+	opacity:0.6;
+	transition:0.4s;
+}
+.accordionlist li:first-child{
+    border-top: none !important;
+}
+.accordionlist .open_box{
+ display:none;
+ color: rgb(76, 76, 76);
+ margin: 0 auto;
+ text-align: left;
+}
+.accordionlist .btn {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size:14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.accordionlist .btn a {
+    padding: 3%;
+    background-color: #191919;
+    display: block;
+    border: 2px solid;
+    color: #ff5a00 !important;
+}
+.accordionlist .btn a:hover {
+	transition: 0.4s;
+	background-color: #8a8989;
+	color: #efefef !important;
+}
+.accordionlist .btn02 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size:14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.accordionlist .btn02 a {
+    padding: 3%;
+    background-color: #191919;
+    display: block;
+    border: 2px solid;
+    color: #23b3af !important;
+}
+.accordionlist .btn02 a:hover {
+	transition: 0.4s;
+	background-color: #8a8989;
+	color: #efefef !important;
+}
+.accordionlist .icon_box{
+position: relative;
+border: 2px solid #ccc;
+}
+.accordion_icon,
+.accordion_icon span {
+	display: inline-block;
+	*display: inline;
+    *zoom: 1;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.accordion_icon {
+	position: absolute;
+	width: 50px;
+	bottom: -28px;
+	left: 7px;
+	border-radius: 30px;
+	height: 50px;
+	border: 2px solid #454545;
+	background-color: rgba(255, 255, 255, 0.12);
+}
+.accordion_icon span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 50%;
+	margin-top: 29px;
+	height: 2px;
+	background-color: #454545;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+.accordion_icon span:nth-of-type(1) {
+    top: -8px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.accordion_icon span:nth-of-type(2) {
+    top: -8px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+/*＋、－切り替え*/
+.accordion1 .accordion_icon.active span:nth-of-type(1) {
+	display:none;
+}
+.accordion1 .accordion_icon.active span:nth-of-type(2) {
+	top: -8px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+/*------------------------------*/

@@ -1,0 +1,862 @@
+@charset "UTF-8";
+/* CSS Document */
+.menu_pc{
+	display:inherit;
+}
+.menu_sp{
+	display:none;
+}
+.menu_pc{
+	display:inherit;
+}
+.sp_only{
+	display: none !important;
+}
+/*------css-----*/
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+/*--------header-----------*/
+
+#top-head {
+    /* top: -70px; */
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    line-height: 1;
+    background-color: #ffffff;
+    z-index: 999;
+    border-top: 20px solid #032995;
+}
+
+#top-head a,
+#top-head {
+    color: #717171;
+    text-decoration: none;
+}
+
+#top-head .inner {
+    position: relative;
+}
+#top-head #mobile-head {
+    display: inline-block;
+    vertical-align: middle;
+    width: 52%;
+}
+#top-head .logo {
+    text-align:  left;
+    position: relative;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: initial;
+    margin-left: 10%;
+}
+
+#top-head .logo a {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#top-head .btn_link {
+	line-height: 21px;
+	/* background-color: #032995; */
+	text-align:  center;
+	display: block;
+	padding: 22px;
+}
+#top-head .btn_link:last-child {
+	/* border-right:1px solid #d8d5d5; */
+}
+#top-head .btn_link_order {
+	background-color: #d10f1c;
+	box-shadow: 1px 1px 1px 1px #3a3939;
+}
+#top-head .btn_link a {
+  color: #ffffff;
+}
+#top-head .btn_link_order a {
+	color:#ffffff;
+}
+/*------#global-nav {
+  height: 50px;
+}
+-------*/
+#top-head .fix_order_box{
+ display: none;
+}
+#gnav-container {
+    background-color: #032995;
+}
+#global-nav ul {
+    list-style: none;
+    margin: 0 auto;
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    width: 90%;
+    background-color: #032995;
+    text-align: center;
+    padding: 0;
+}
+
+#global-nav ul li {
+    /* float: left; */
+    /* display:  inline-block; */
+    /* margin-left: -5px; */
+    /* height: 70px; */
+    padding: 0;
+    vertical-align: middle;
+    position: relative;
+}
+#global-nav ul a {
+    padding: 0px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid #d8d5d5;
+    border-right: none;
+    color: #fff;
+    height: 86px;
+}
+#global-nav ul a:last-child {
+	border-right:1px solid #d8d5d5;
+}
+#global-nav ul a.active {
+ background-color: #4582ce;
+}
+#global-nav ul a::after {
+   content: '';
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   -webkit-transform: scaleX(0);
+   -ms-transform: scaleX(0);
+   transform: scaleX(0);
+   background-color: #ffffff;
+   -webkit-transition: all .3s ease;
+   transition: all .3s ease;
+}
+
+#global-nav ul a:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#global-nav ul .order_nav{
+ position: relative;
+ background-color: #E40000;
+}
+#global-nav ul .order_nav:before{
+ position: absolute;
+ content: "";
+ background-image: url(../img/common/btn_icon_W.png);
+ width: 20px;
+ height: 20px;
+ background-repeat: no-repeat;
+ background-size: 16px;
+ bottom: 3px;
+ right: 2px;
+}
+
+
+/*---------*/
+
+.dropmenu {
+  position: relative;
+  list-style-type: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  border-left: 1px solid #d8d5d5;
+}
+#global-nav .dropmenu li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#global-nav .dropmenu li a {
+  margin: 0;
+  padding: 22px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  border-left: none;
+  line-height: 21px;
+  height: 86px;
+  position: relative;
+}
+#global-nav .dropmenu li .nav_menu {
+ position: relative;
+}
+#global-nav .dropmenu li .nav_menu:before {
+ position: absolute;
+ content: "";
+ width: 17px;
+ height: 17px;
+ background-image: url("../img/header/navi_child.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 12px;
+ bottom: 3px;
+ right: 10px;
+}
+#global-nav .dropmenu li ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #0a3473;
+}
+#global-nav .dropmenu li ul li{
+  overflow: hidden;
+  height: 0;
+  color: #fff;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+}
+#global-nav .dropmenu li ul li a{
+  padding: 13px 15px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  display:block;
+  width:100%;
+  height: auto;
+  border-right: none;
+}
+#global-nav .dropmenu li:hover > a{
+
+  color: #ffffff;
+}
+#global-nav .dropmenu > li:hover > a{
+  border-radius: 3px 3px 0 0;
+}
+#global-nav .dropmenu li:hover ul li{
+  overflow: visible;
+  height: auto;
+  border-top: 1px solid #9E9E9E;
+
+}
+#global-nav .dropmenu li:hover ul li:first-child{
+  border-top: 0;
+}
+#global-nav .dropmenu li:hover ul li:last-child{
+  border-bottom: 0;
+}
+#global-nav .dropmenu li:hover ul li:last-child a{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/*---------*/
+
+
+
+
+
+
+
+#global-nav ul li img {
+  width: 266px;
+  padding-top: 3px;
+}
+#global-nav ul li .icon {
+  width:48px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+#global-nav ul li .icon img {
+  padding:0;
+  width: 100%;
+}
+nav span{
+    background:#666;
+    height:2px;
+    display:block;
+    position:relative;
+    width:50px;
+    left:0;
+}
+/*--------インフォメーションナビ-----------*/
+#top-head .head_info{
+	margin-top:0;
+	display: inline-block;
+	height: auto;
+	text-align: right;
+	width: 47%;
+	max-width: 587px;
+	vertical-align: middle;
+}
+
+#top-head .head_info .contact{
+	margin:0;
+	display:  inline-block;
+	vertical-align: top;
+	text-align: right;
+	max-width: 310px;
+	width: 100%;
+	margin-right: 10%;
+	margin-top: 15px;
+	margin-bottom: 18px;
+}
+#top-head .head_info .contact .mail{
+	margin:0;
+	margin-bottom: 5px;
+}
+#top-head .head_info .contact .mail .icon{
+	margin: 0 auto;
+	width: 24px;
+	float:  left;
+	margin-right: 10px;
+}
+#top-head .head_info .contact .mail .info{
+	margin:0;
+	font-size: 16px;
+}
+#top-head .head_info .contact .tel{
+	margin:0;
+}
+#top-head .head_info .contact .tel .icon{
+	margin:0;
+	width: 20px;
+	float: left;
+	margin-right: 8px;
+	margin-left: 3px;
+}
+#top-head .head_info .contact .tel .info{
+	margin:0;
+	font-weight:  bold;
+	font-size: 22px;
+	padding-top: 2px;
+	text-align: left;
+	color: #3e3e3e;
+}
+#top-head .head_info .contact .open{
+    margin:0 auto;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 8px;
+    margin-left: 34px;
+    color: #3e3e3e;
+}
+#top-head .head_info .btn_wrap{
+ margin: 0 auto;
+ margin-top: 5px;
+}
+#top-head .head_info .btn_wrap .btn{
+ margin: 0 auto;
+ display: inline-block;
+ font-size: 15px;
+ text-align: center;
+ font-weight: bold;
+ position: relative;
+ padding-top: 43px;
+ min-width: 45px;
+ vertical-align: bottom;
+ margin-left: 4px;
+}
+#top-head .head_info .btn_wrap .btn:before{
+ content: "";
+ position: absolute;
+ margin: auto;
+ left: 0;
+ right: 0;
+ width: 45px;
+ height: 45px;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+#top-head .head_info .btn_wrap .btn_mail:before{
+ background-image: url("../img/header/icon_mail.png");
+ background-size: 35px;
+ top: 0;
+}
+#top-head .head_info .btn_wrap .btn_map:before{
+ background-image: url("../img/header/icon_map.png");
+ background-size: 24px;
+ top: 0;
+}
+#top-head .head_info .btn_wrap .btn_cart:before{
+ background-image: url("../img/header/icon_cart.png");
+ background-size: 32px;
+ top: 0;
+}
+#top-head .head_info .btn_wrap .btn_signin:before{
+ background-image: url("../img/header/icon_signin.png");
+ background-size: 23px;
+ top: 0;
+}
+#top-head .head_info .btn_wrap .btn_facebook{
+ margin: 0 auto;
+ width: 73px;
+ padding-top: 0;
+}
+#top-head .head_info .btn_wrap .btn a{
+	color:#032995 !important;
+}
+
+/*--------固定化されたときのCSS-----------*/
+
+#top-head.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 0;
+    background: #fff;
+    max-width: 1280px;
+    background: rgba(245, 244, 244, 0.94);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+
+#top-head.fixed .logo {
+  position: relative;
+    font-size: 24px;
+    color: #333;
+}
+
+#top-head.fixed .logo a {
+  position: absolute;
+  width: 100%;
+  /* height: 30px; */
+}
+#top-head.fixed #global-nav ul {
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 14px;
+}
+#top-head.fixed #global-nav ul li a {
+    /* color: #1a1a1a; */
+    /* padding: 0; */
+    /* padding-bottom: 2px; */
+}
+#top-head.fixed .btn_link {
+	/* line-height: 21px; */
+	/* padding-top: 11px; */
+	/* padding-left: 20px; */
+	/* padding-right: 20px; */
+	/* background-color: #ededed; */
+	/* height: 60px; */
+	/* text-align:  center; */
+}
+#top-head.fixed .btn_link_order {
+	background-color: #d10f1c;
+}
+#top-head.fixed .btn_link_order a {
+	color: #ffffff !important;
+}
+#top-head.fixed #global-nav ul li .icon {width: 35px;}
+#top-head.fixed .head_info{
+	display:none;
+}
+
+
+
+/*-----------スマホのトグルボタンのCSS-------------*/
+
+#nav-toggle {
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #1a1a1a;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+
+
+/*---------メニューでロゴが隠れる場合の処理--------------*/
+@media screen and (max-width: 900px) and (min-width: 801px) { 
+#top-head .logo {
+}
+#global-nav ul li .icon {
+    width: 35px;
+    margin: 0 auto;
+}
+#top-head .btn_link {
+    line-height: 21px;
+    /* padding-top: 11px; */
+    padding-left: 17px;
+    padding-right: 17px;
+    height: 70px;
+}
+#top-head.fixed .btn_link {
+    /* line-height: 21px; */
+    /* padding-top: 11px; */
+    /* padding-left: 17px; */
+    /* padding-right: 17px; */
+}
+}
+
+
+/*------------タブレット用------------------*/
+
+.menu_pc{
+	display:none;
+}
+.menu_sp{
+	display:inherit;
+}
+.sp_only{
+	display: inherit !important;
+}
+.overflow_hidden{
+ overflow: hidden;
+}
+#top-head .fix_order_box{
+ margin: 0 auto;
+ position: absolute;
+ right: 0;
+ height: 70px;
+ display: inherit;
+}
+#top-head .fix_order_box .btn_fix_order{
+ margin: 0 auto;
+ width: 85px;
+ text-align: center;
+ position: relative;
+ background-color: #DA0003;
+}
+#top-head .fix_order_box .btn_fix_order:before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/common/btn_icon_W.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    bottom: 3px;
+    right: 2px;
+}
+#top-head .fix_order_box .btn_fix_order a{
+ margin: 0 auto;
+ color: #fff;
+ font-size: 17px;
+ font-weight: bold;
+ display: block;
+ height: 70px;
+ text-align: center;
+ padding-top: 26px;
+}
+#top-head .fix_order_box .btn_fix_order a:hover{
+ margin: 0 auto;
+ background-color: #B20104;
+ transition: 0.5s;
+}
+#global-nav ul li .icon {
+    width: 30px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-right: 3%;
+}
+#top-head.fixed #global-nav ul li .icon {
+    width: 30px;
+}
+#top-head #global-nav ul li a, #top-head.fixed #global-nav ul li a {
+    /* font-size: 17px; */
+}
+#top-head .head_info .open .title {
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    color: #1a1a1a;
+}
+#top-head .head_info .open .info {
+    font-size: 12px;
+    line-height: 20px;
+}
+#top-head .head_info .contact .mail .icon {
+    width: 16px;
+    float: left;
+    margin-right: 7px;
+}
+#top-head .head_info .contact .mail .info {
+    font-size: 13px;
+    line-height: 19px;
+}
+#top-head .head_info .contact .tel .icon {
+    width: 15px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+#top-head .head_info .contact .tel .info {
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 0px;
+    color: #1a1a1a;
+}
+#top-head .head_info {
+    padding-bottom: 7px;
+    display: none;
+}
+#top-head.fixed .logo, #top-head .logo {
+}
+    #top-head {
+        top: 0;
+        position: fixed;
+        margin-top: 0;
+        z-index: 1000;
+        border-top: none;
+    }
+    /* Fixed reset */
+  #nav-toggle {
+      display: block;
+      left: 25px;
+      top: 22px;
+  }
+  #top-head.open {
+  	height:700px;
+  	overflow-y:scroll;
+  }
+  #top-head.fixed {
+      padding-top: 0;
+      background: transparent;
+  }
+  #top-head #mobile-head {
+      background: #f3f3f3;
+      width: 100%;
+      height: 80px;
+      z-index: 999;
+      width: 100%;
+      position: relative;
+      border-top: 10px solid #032995;
+  }
+  #top-head.fixed .logo,
+  #top-head .logo {
+      position: absolute;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      top: 0px;
+      color: #333;
+      font-size: initial;
+      width: 327px;
+      max-width: 327px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  #global-nav {
+      position: absolute;
+      /* 開いてないときは画面外に配置 */
+      top: -2000px;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      padding-bottom: 0;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+  }
+
+
+ #top-head.open #global-nav ul {
+    list-style: none;
+    position: relative;
+    top: 1513px;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+  /* #nav-toggle 切り替えアニメーション */
+  .open #nav-toggle span:nth-child(1) {
+      top: 11px;
+      -webkit-transform: rotate(315deg);
+      -moz-transform: rotate(315deg);
+      transform: rotate(315deg);
+  }
+  .open #nav-toggle span:nth-child(2) {
+      width: 0;
+      left: 50%;
+  }
+  .open #nav-toggle span:nth-child(3) {
+      top: 11px;
+      -webkit-transform: rotate(-315deg);
+      -moz-transform: rotate(-315deg);
+      transform: rotate(-315deg);
+  }
+  /* #global-nav スライドアニメーション */
+  .open #global-nav {
+      /* #global-nav top + #mobile-head height */
+      -moz-transform: translateY(556px);
+      -webkit-transform: translateY(556px);
+      transform: translateY(556px);
+  }
+ /*
+.open #gnav-ul {
+    overflow-y: scroll;
+    height: 500px;
+}
+*/
+  #global-nav ul a {
+    display: block;
+    height: auto;
+    border-left: none;
+    border-right: none !important;
+    border-bottom: 1px solid #ccc;
+}
+.dropmenu {
+    display: block;
+}
+#global-nav .dropmenu li a {
+    height: auto;
+}
+#global-nav .view_more_wrap{
+ margin: 0 auto;
+}
+#global-nav .view_more_wrap .view_more_ac{
+ margin: 0 auto;
+ padding: 22px;
+ position: relative;
+ border-bottom: 1px solid #ccc;
+}
+#global-nav .view_more_wrap .view_more_ac:before {
+ position: absolute;
+ content: "";
+ width: 22px;
+ height: 22px;
+ background-image: url("../img/header/navi_child.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 17px;
+ bottom: 3px;
+ right: 10px;
+}
+#global-nav .view_more_wrap .sub_ac_box{
+ margin: 0 auto;
+ top: 100% !important;
+}
+#global-nav .view_more_wrap .sub_ac_box li{
+ margin: 0 auto;
+}
+#global-nav .view_more_wrap .sub_ac_box li a{
+ margin: 0 auto;
+ padding: 12px 15px;
+ border-bottom: 1px dotted #999;
+ border-left: none;
+ border-right: none;
+ font-size: 15px;
+}
+#global-nav .view_more_wrap .sub_ac_box li:last-child{
+	border-bottom:1px solid #ccc;
+}
+#global-nav .info_box{
+ margin: 0 auto;
+ padding-top: 30px;
+ padding-bottom: 40px;
+} 
+#global-nav .info_box .sp_lang{
+	display:block;
+	font-size:14px;
+}
+#global-nav .info_box .sp_lang a{
+	font-size:14px;
+	display: inline-block;
+}
+#global-nav .info_box .comment{
+ margin: 0 auto;
+ color: #fff;
+ font-size: 13px;
+ line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) { 
+ .wide_logo{
+ display: inherit;
+ }
+ .small_logo{
+ display: none;
+ }
+ /*
+ .open #gnav-ul {
+    overflow-y: scroll;
+    height: 900px;
+}
+*/
+#top-head.open {
+    height: 100%;
+    overflow-y: scroll;
+}
+}
+@media screen and (max-width: 767px) { 
+ .wide_logo{
+ display: none;
+ }
+ .small_logo{
+ display: inherit;
+ }
+ #top-head.fixed .logo, #top-head .logo {
+    left: 0px;
+    right: 0;
+    margin: auto;
+    top: 0px;
+    width: 140px;
+    max-width: 140px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+ /*
+.open #gnav-ul {
+    overflow-y: scroll;
+    height: 500px;
+}
+*/
+#top-head.open {
+    height: 100%;
+    overflow-y: scroll;
+}
+}

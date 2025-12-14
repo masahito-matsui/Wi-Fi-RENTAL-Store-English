@@ -1,0 +1,43 @@
+document.write('\
+<div class="modal_order">\
+ <div class="wrap">\
+<div class="item_wrap">\
+<p class="title">お申し込み</p>\
+			<div class="item_box">\
+    <p class="image"><img src="https://www.wifi-rental-store.jp/wifi-main/img/modal/ex/item_cw_bt.png" width="100%" alt=""/></p>\
+				<div class="right">\
+				<p class="name">CLOUD AiR-WiFi AIR-1</p>\
+					<p class="data">100GB/月</p>\
+					<p class="category">モバイルバッテリーセット(＋50円/日)</p>\
+				</div>\
+				<p class="comment">WiFiルーターと10,000mAhのモバイルバッテリーがセットになったレンタル商品です。<br>長時間持ち歩く方へおすすめのセット商品です。</p>\
+			</div>\
+		</div>\
+		<div class="order_wrap">\
+   <p class="comment">ご希望の延長プランを選択してお進みください</p>\
+			<div class="flex_wrap">\
+<div class="btn_box"><a href="/shopdetail/cw_000_bt_ex"><p class="plan">0泊1日プラン</p><p class="fee">¥640</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_001_bt_ex"><p class="plan">1泊2日プラン</p><p class="fee">¥1,280</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_002_bt_ex"><p class="plan">2泊3日プラン</p><p class="fee">¥1,920</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_003_bt_ex"><p class="plan">3泊4日プラン</p><p class="fee">¥2,560</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_004_bt_ex"><p class="plan">4泊5日プラン</p><p class="fee">¥3,200</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_005_bt_ex"><p class="plan">5泊6日プラン</p><p class="fee">¥3,840</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_006_bt_ex"><p class="plan">6泊7日プラン</p><p class="fee">¥4,480</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_007_bt_ex"><p class="plan">7泊8日プラン</p><p class="fee">¥5,120</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_008_bt_ex"><p class="plan">8泊9日プラン</p><p class="fee">¥5,760</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_009_bt_ex"><p class="plan">9泊10日プラン</p><p class="fee">¥6,400</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_010_bt_ex"><p class="plan">10泊11日プラン</p><p class="fee">¥7,040</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_011_bt_ex"><p class="plan">11泊12日プラン</p><p class="fee">¥7,680</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_012_bt_ex"><p class="plan">12泊13日プラン</p><p class="fee">¥8,320</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_013_bt_ex"><p class="plan">13泊14日プラン</p><p class="fee">¥8,960</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_014_bt_ex"><p class="plan">1ヶ月パック<br><span class="s_light">(15日～31日)</span></p><p class="fee">¥9,600</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_060_bt_ex"><p class="plan">2ヶ月パック<br><span class="s_light">(60泊61日)</span></p><p class="fee">¥16,750</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_090_bt_ex"><p class="plan">3ヶ月パック<br><span class="s_light">(90泊91日)</span></p><p class="fee">¥23,350</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_120_bt_ex"><p class="plan">4ヶ月パック<br><span class="s_light">(120泊121日)</span></p><p class="fee">¥29,250</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_150_bt_ex"><p class="plan">5ヶ月パック<br><span class="s_light">(150泊151日)</span></p><p class="fee">¥32,550</p></a></div>\
+<div class="btn_box"><a href="/shopdetail/cw_180_bt_ex"><p class="plan">6ヶ月パック<br><span class="s_light">(180泊181日)</span></p><p class="fee">¥35,850</p></a></div>\
+			</div>\
+		</div>\
+	</div>\
+</div>\
+');

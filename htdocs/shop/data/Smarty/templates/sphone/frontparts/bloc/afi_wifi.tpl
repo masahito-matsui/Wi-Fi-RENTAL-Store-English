@@ -1,0 +1,1 @@
+<img src="http://www.wifi-rental-store.jp/afl_pro/add.php?check=aaacccbbb&adwares=SA000004" width="1" height="1" />

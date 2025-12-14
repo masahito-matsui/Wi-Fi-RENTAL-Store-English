@@ -1,0 +1,39 @@
+<?php
+/*
+ * GAECommerceUA: UA版 Google Analytics eコマース対応 プラグイン
+ * Copyright (C) 2013 C-Rowl Co.,Ltd. All Rights Reserved.
+ * http://www.c-rowl.com/
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+
+/**
+ * プラグイン設定画面
+ *
+ * @package GAECommerceUA
+ * @author C-Rowl, Inc.
+ * @version $Id: $
+ */
+
+// {{{ requires
+require_once PLUGIN_UPLOAD_REALDIR .  'GAECommerceUA/class_extends/page_extends/plg_GAECommerceUA_LC_Page_Config_Ex.php';
+
+// }}}
+// {{{ generate page
+$objPage = new plg_GAECommerceUA_LC_Page_Config_Ex();
+register_shutdown_function(array($objPage, 'destroy'));
+$objPage->init();
+$objPage->process();
+
